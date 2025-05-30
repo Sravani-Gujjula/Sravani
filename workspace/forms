@@ -1,0 +1,104 @@
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            background-color: #0c66e4cc;
+            max-width: 400px;
+            margin: 20px auto;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-left: 30%;
+        }
+
+        .label_input {
+            margin-bottom: 10px;
+        }
+
+        .label_input label {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            margin-bottom: 4px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            width: 30%;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+      
+        input {
+            margin-right: 5px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <form id="second-form">
+        <h3>Login Form</h3>
+        <div>
+            <label for="text-input2">First Name :</label>
+            <input type="text" id="text-input2" name="text-input2">
+        </div>
+        <div>
+            <label for="email-input2">Email :</label>
+            <input type="email" id="email-input2" name="email-input2">
+        </div>
+        <div>
+            <label for="quantity">Phone number :</label>
+            <input type="number" id="quantity" name="quantity">
+        </div>
+        <div>
+            <label for="number-input2">Age :</label>
+            <input type="number" id="number-input2" name="number-input2">
+        </div>
+        <div>
+            <label for="birthdaydate">Date of birth:</label>
+            <input type="date" id="birthdaydate" name="birthdaydate">
+        </div>
+        <div>
+            <label>Gender:</label><br>
+            <div class="radio-group">
+                <label for="radio-option3" style="display: inline-block; margin-right: 20px;">Male</label>
+                <input type="radio" id="radio-option3" name="radio-option2" value= style="display: inline-block; margin-right: 10px;">
+                 <label for="radio-option4" style="display: inline-block;">Female</label>
+                <input type="radio" id="radio-option4" name="radio-option2" value="option4" style="display: inline-block; margin-left: 20px;">
+            </div>
+        </div>
+        <div>
+            <label>Languages:</label><br>
+            <input type="checkbox" id="checkbox-option3" name="checkbox-option3">
+            <label for="checkbox-option3">Telugu</label><br>
+            <input type="checkbox" id="checkbox-option3" name="checkbox-option3">
+            <label for="checkbox-option3">English</label>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+    counter-reset: section; 
+    background-color: aquamarine; 
+}  
+h1 {  
+    counter-reset: subsection; 
+    text-transform: uppercase; 
+}  
+h1::before {  
+    counter-increment: section;  
+    content: "Section " counter(section) " : ";  
+}  
+h2::before {  
+    counter-increment: subsection;  
+    content: counter(section) "." counter(subsection) " ";  
+}  
+</style>  
+</head>  
+<body>  
+<h1>Java tutorials:</h1>  
+<h2>Core Java tutorial</h2>  
+<h2>Servlet tutorial</h2>  
+<h2>JSP tutorial</h2>  
+<h2>Spring tutorial</h2>  
+<h2>Hibernate tutorial</h2>  
+  
+<h1>Web technology tutorials:</h1>  
+<h2>HTML tutorial</h2>  
+<h2>CSS tutorial</h2>  
+<h2>jQuery tutorial</h2>  
+<h2>Bootstrap tutorial</h2>  
+  
+<h1>Database tutorials:</h1>  
+<h2>SQL tutorial</h2>  
+<h2>MySQL tutorial</h2>  
+<h2>PL/SQL tutorial</h2>  
+<h2>Oracle tutorial</h2>  
+<p><strong>Note:</strong> IE8 supports these properties only if a !DOCTYPE is specified.</p>  
+</body>  
+</html>  

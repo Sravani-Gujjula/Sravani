@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>
+body{
+    background-color: darkseagreen;
+}  
+ol {  
+    counter-reset: section;  
+    list-style-type: none; 
+    background-color: rosybrown;
+    color: honeydew;
+}  
+  
+li::before {  
+    counter-increment: section;  
+    content: counters(section,".") " ";  
+}  
+</style>  
+</head>  
+<body>  
+<h2 style="color: blue;">list of grocery items have to buy in the supermart</h2>  
+<ol>  
+  <li>biscults</li>  
+  <li>choco cookies</li> 
+    <ol>  
+      <li>sweets</li>  
+      <li>honey</li>  
+      <li>sugar </li> 
+        <ol>  
+          <li>chocolates</li>  
+          <li>butter</li>  
+          <li>milk</li>  
+        </ol>  
+      </li>  
+      <li>chocopowder</li>  
+    </ol>  
+  </li>  
+  <li>cookies</li>  
+  <li>ice cream</li>  
+</ol>  
+<p><b>Note:</b> these are the ingridents to make more delicious.</p>  
+</body>  
+</html>  

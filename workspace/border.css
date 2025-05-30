@@ -1,0 +1,19 @@
+!DOCTYPE html
+<html>
+    <head>
+        <style>
+            p{
+                border-style:solid dotted double;
+                border-width:20px;
+                border-top-color:blue
+                border-bottom-color:brown
+
+            }
+            </style>
+    </head>
+</body>
+<p>
+   Hello Welcome to the world 
+</p>
+</body>
+</html>

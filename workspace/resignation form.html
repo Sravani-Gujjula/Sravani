@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resignation Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Resignation Form</h2>
+  <form action="/submit-resignation" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="empid">Employee ID</label>
+    <input type="text" id="empid" name="empid" required>
+
+    <label for="resignationDate">Resignation Date</label>
+    <input type="date" id="resignationDate" name="resignationDate" required>
+
+    <label for="lastDay">Last Working Day</label>
+    <input type="date" id="lastDay" name="lastDay" required>
+
+    <label for="reason">Reason for Resignation</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+
+    <label for="signature">Signature (Type Your Name)</label>
+    <input type="text" id="signature" name="signature" required>
+
+    <button type="submit">Submit Resignation</button>
+  </form>
+</div>
+
+</body>
+</html>
